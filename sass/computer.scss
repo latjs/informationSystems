@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style: none;
+}
+
+// heade
+.header{
+    width: 100%;
+    height: 40px;
+    background: url(../img/righttop.gif) repeat-x;
+    line-height: 40px;
+    font-size: 12px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    a{
+        display: block;
+        float: left;
+        margin-right: 5px;
+        &:first-child{
+            color: #000;
+            font-weight: bold;
+        }
+        &:nth-child(n+2){
+            color: #333;
+        }
+    }
+}
+
+// content
+.content{
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    .ziliao{
+        width: 100%;
+        .top{
+            width: 100%;
+            overflow: hidden;
+            font-size: 14px;
+            color: #2a3e93;
+            margin-top: 20px;
+            .top_left{
+                width: 70px;
+                height: 20px;
+                float: left;
+            }
+            .top_right{
+                overflow: hidden;
+                height: 9px;
+                border-bottom: 1px solid #e5ecf0;
+
+            }
+        }
+        .con{
+            width: 100%;
+            overflow: hidden;
+            .box{
+                width: 277px;
+                height: 72px;
+                position: relative;
+                cursor: pointer;
+                float: left;
+                margin-top: 6px;
+                img{
+                    float: left;
+                    margin-top: 20px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+                .box_righ{
+                    float: left;
+                    width: 190px;
+                    h2{
+                        font-size: 12px;
+                        color: #000;
+                        font-weight: normal;
+                        margin-bottom: 5px;
+                        margin-top: 10px;
+                    }
+                    .small_box{
+                        width: 100%;
+                        height: 15px;
+                        position: relative;
+                        background: url(../img/diskbg.png) repeat-x;
+                        span{
+                            display: block;
+                            width: 50%;
+                            height: 15px;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            background: url(../img/cbg.png) repeat-x;
+                        }
+                    }
+                    p{
+                        width: 100%;
+                        font-size: 12px;
+                        color: #666;
+                        margin-top: 5px;
+                    }
+                }
+                .hover{
+                    width: 100%;
+                    height: 70px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: #fcfcfc;
+                    border: solid 1px #e5ecf0;
+                    opacity: 0.9;
+                    z-index: -1;
+                    display: none;
+                }
+                &:hover{
+                    .hover{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .qita{
+        width: 100%;
+        .top{
+            width: 100%;
+            overflow: hidden;
+            font-size: 14px;
+            color: #2a3e93;
+            margin-top: 20px;
+            .top_left{
+                width: 70px;
+                height: 20px;
+                float: left;
+            }
+            .top_right{
+                overflow: hidden;
+                height: 9px;
+                border-bottom: 1px solid #e5ecf0;
+
+            }
+        }
+        .con{
+            width:100%;
+            overflow: hidden;
+            .box{
+                width: 277px;
+                height: 72px;
+                float: left;
+                position: relative;
+                cursor: pointer;
+                margin-top: 6px;
+                img{
+                    float: left;
+                    margin:10px;
+                }
+                .right{
+                    float: left;
+                    p:first-child{
+                        font-size: 14px;
+                        color: #000;
+                        margin-top: 15px;
+                    }
+                    p:last-child{
+                        font-size: 12px;
+                        color: #999;
+                    }
+                }
+                .hover{
+                    width: 100%;
+                    height: 70px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: #fcfcfc;
+                    border: solid 1px #e5ecf0;
+                    opacity: 0.9;
+                    z-index: -1;
+                    display: none;
+                }
+                &:hover{
+                    .hover{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
