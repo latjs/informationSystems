@@ -1,0 +1,64 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    width:100%;
+    height:auto;
+    font-family: '微软雅黑';
+    margin: 0 auto;
+    min-width: 980px;
+    background:url('../img/light.png');
+    background-color: rgb( 28 , 119,172); 
+    background: position -752.5px 0px;  
+    
+} 
+ul,li{
+    list-style:none; 
+}
+a{
+    display: block;
+    text-decoration: none;  
+}
+// **************************************************
+.box{
+    width:100%;
+    height:auto;
+    .title{
+        height:47px; 
+        background: url('../img/loginbg1.png')repeat-x; 
+        z-index: 100;
+        width:100%;
+        span{
+            background: url('../img/loginsj.png') no-repeat 21px 18px; 
+            line-height: 47px;
+            color:#afc5d2;
+            text-indent: 44px;
+            float: left;
+            font-size:12px; 
+        }
+        ul{
+            padding-right:30px;
+            float:right;
+            line-height:47px;
+            color:#afc5d2; 
+            li{
+                font-size: 12px;
+                float: left; 
+                margin-left:20px;   
+            }
+        }
+    }
+    .content{
+        background: url('../img/loginbg3.png') no-repeat center;
+        width: 100%;
+        height:585px; 
+        .Interface{
+            overflow: hidden;
+            background: url('../img/loginlogo.png')no-repeat center;
+            width:100%; 
+            height:71px;
+            margin-top:75px; 
+        }
+    }
+}
