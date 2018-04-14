@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/filelist.css">
+</head>
+<body>
+    <div class="filelist">
+        <dl class="f-top">
+            <dt class="f-address">位置:</dt>
+            <dd><a href="javascript:;">首页</a><span></span></dd>
+            <dd><a href="computer.html">文件管理</a><span></span></dd>
+            <dd><a href="javascript:;">列表</a></dd>
+        </dl>
+        <div class="f-content">
+            <ul class="uls">
+                <li class="name">名称</li>
+                <li class="date">修改日期</li>
+                <li class="f-type">类型</li>
+                <li class="dx">大小</li>
+            </ul>
+            <!-- 1 -->
+            <dl class="f-details act">
+                <dt class="details1 name" id="name">
+                    <img class="img1" src="../img/f1_min.jpg" alt="">
+                    <img class="img2" id="img2" src="../img/f1_middle.jpg" alt="">
+                    <img class="img3" id="img3" src="../img/f1_big.jpg" alt="">
+                    <span class="txt">Adobe Dreamweaver CS5简体中文绿色</span>
+                </dt>
+                <dd class="date">2013/10/14 17:38</dd>
+                <dd class="f-type">文件夹</dd>
+                <dd class="dx">0kb</dd>
+            </dl>
+            <!-- 2 -->
+            <dl class="f-details">
+                <dt class="details1 name" id="name">
+                    <img class="img1" src="../img/f1_min.jpg" alt="">
+                    <img class="img2" id="img2" src="../img/f1_middle.jpg" alt="">
+                    <img class="img3" id="img3" src="../img/f1_big.jpg" alt="">
+                    <span class="txt">Adobe Photoshop CS5</span>
+                </dt>
+                <dd class="date">2013/10/14 17:38</dd>
+                <dd class="f-type">文件夹</dd>
+                <dd class="dx">0kb</dd>
+            </dl>
+            <!-- 3 -->
+            <dl class="f-details">
+                <dt class="details1 name"  id="name">
+                    <img class="img1" src="../img/f1_min.jpg" alt="">
+                    <img class="img2" id="img2" src="../img/f1_middle.jpg" alt="">
+                    <img class="img3" id="img3" src="../img/f1_big.jpg" alt="">
+                    <span class="txt">PS形状</span>
+                </dt>
+                <dd class="date">2013/10/14 17:38</dd>
+                <dd class="f-type">文件夹</dd>
+                <dd class="dx">0kb</dd>
+            </dl>
+            <!-- 4 -->
+            <dl class="f-details">
+                <dt class="details1 name"  id="name">
+                    <img class="img1" src="../img/f1_min.jpg" alt="">
+                    <img class="img2" id="img2" src="../img/f1_middle.jpg" alt="">
+                    <img class="img3" id="img3" src="../img/f1_big.jpg" alt="">
+                    <span class="txt">Microsoft Office 2007中文版</span>
+                </dt>
+                <dd class="date">2013/10/14 17:38</dd>
+                <dd class="f-type">文件夹</dd>
+                <dd class="dx">0kb</dd>
+            </dl>
+            <!-- 5 -->
+            <dl class="f-details">
+                <dt class="details1 name" id="name">
+                    <img class="img1" src="../img/f2_min.jpg" alt="">
+                    <img class="img2" id="img2" src="../img/f2_middle.jpg" alt="">
+                    <img class="img3" id="img3" src="../img/f2_big.jpg" alt="">
+                    <span class="txt" id="#txt">Microsoft Office 2007中文版</span>
+                </dt>
+                <dd class="date">2013/10/14 17:38</dd>
+                <dd class="f-type">文件夹</dd>
+                <dd class="dx">0kb</dd>
+            </dl>
+        </div>
+    </div>
+    <script src="../js/jquery.1.8.3.js"></script>
+    <script src="../js/filelist.js"></script>
+    <script>
+    $(function () {
+        $.getJSON('../json/filelist.json', function (data) {
+            $.each(data, function (k, v) {
+                $('.f-content').append(`
+                    <dl class="f-details" data-id='${k}'>
+                        <dt class="details1 name" id="name">
+                            <img class="img1" src="${v.fileImgMin}" alt="">
+                            <img class="img2" src="${v.fileImgMiddle}" alt="">
+                            <img class="img3" src="${v.fileImgBig}" alt="">
+                            <span class="txt" id="#txt">${v.fileName}</span>
+                        </dt>
+                        <dd class="date">${v.fileDate}</dd>
+                        <dd class="f-type">${v.fileType}</dd>
+                        <dd class="dx">${v.fileBig}</dd>
+                    </dl>
+            `);
+            })
+        });
+    })
+    </script>
+</body>
+</html>

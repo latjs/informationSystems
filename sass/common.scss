@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*common*/
+body, div, p, ul, ol, li, dl, dt, dd, table, tr, td, th, form, h1, h2, h3, h4, h5, h6, fieldset, figure, hr, img, input {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-family: "微软雅黑",Arial; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: none; 
+}
+
+ol, ul {
+  list-style: none; }
