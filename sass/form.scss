@@ -122,11 +122,11 @@ a{
                     width: 345px;
                     height: 32px;
                     line-height: 32px;
-                    border-top: solid 1px #a7b5bc;
+                    border-top: solid 1px #a7b5bc; 
                     border-left: solid 1px #a7b5bc;
                     border-right: solid 1px #ced9df;
                     border-bottom: solid 1px #ced9df;
-                    background: url('../img/inputbg.gif') repeat-x;
+                    background: url('../img/inputbg.gif') repeat-x; 
                     text-indent: 10px;
                     float: left;   
                     
@@ -214,6 +214,42 @@ a{
                     border:none;
                 }
             }
+        }
+    }
+} 
+@media screen and (max-width:960px){  
+    // body{
+    //     background: red;
+    // } 
+    .Title{
+        span{
+            clear: both; 
+        }
+        input{
+            clear: both;  
+        }
+    }
+    .Keyword{
+        span{
+            clear: both; 
+        }
+        input{
+            clear: both;  
+        }
+    }
+    .address{
+        span{
+            clear: both; 
+        }
+        input{
+            clear: both;  
+        }
+    }
+    .con{
+        width:400px;
+        #cont{
+            width:238px;
+            height:100px; 
         }
     }
 } 

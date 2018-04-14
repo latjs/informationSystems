@@ -208,6 +208,11 @@ a{
                 font-size:12px;
                 b{
                     font-size:12px;
+                    float: left;
+                }
+                a{
+                    color:#000;
+                    float: left;
                 }
             }
             ul{
@@ -222,11 +227,18 @@ a{
                         color:#000;
                     }
                     & :hover{
-                        color: #00a4ac;
+                        color: #00a4ac; 
                     }
                 }
             }
         }
-
+    }
+}
+@media screen and (max-width:960px){
+    .te{ 
+        a{
+            display: none;
+        }
+        
     }
 }
