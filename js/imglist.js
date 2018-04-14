@@ -29,3 +29,4 @@ $(function () {
             $(this).toggleClass("actPage").css({ 'background': ''});
         });
 }); 
+
