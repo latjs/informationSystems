@@ -71,15 +71,11 @@ ul{
     .middle{
         width: 100%;
         border:1px solid #999;
-        tr:first-child{
-            background: url(../img/th.gif) repeat;
-            height: 33px;
-            font-size: 12px;
-            text-align: left;
-            text-indent: 21px;
-        }
         tr:nth-child(n+2){
             cursor: pointer;
+            &:hover{
+                background:rgb(165, 223, 187);
+            }
             td{
                 border-right: 1px dotted #999;
                 text-indent: 21px;
@@ -97,6 +93,16 @@ ul{
                     margin:10px auto;
                 }
             }
+        }
+        tr:nth-child(2n+1){
+            background: rgb(234, 246, 248);
+        }
+        tr:first-child{
+            background: #fff url(../img/th.gif) repeat;
+            height: 33px;
+            font-size: 12px;
+            text-align: left;
+            text-indent: 21px;
         }
     }
 }
