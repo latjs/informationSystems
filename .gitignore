@@ -1,8 +1,0 @@
-﻿#忽略对node_modules的跟踪
-node_modules/
-package.json
-package-lock.json
-gulpfile.js
-zip/
-LICENSE
-README
