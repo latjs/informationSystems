@@ -1,6 +1,4 @@
-body{
-  background: #f0f9fd;
-}
+
 .header{
   background: url("../img/top.jpg") left top repeat-x;
   width: 100%;
@@ -129,70 +127,86 @@ body{
         height: 46px;
       }
 }
-.leftlist{
-      width: 187px;
-      padding-bottom: 9999px;
-      margin-bottom: -9999px;
-      overflow: hidden;
-      background: url(../img/leftline.gif) repeat-y right;
-      dd{
-        background: url(../img/leftmenubg.gif) repeat-x;
-        line-height: 35px;
-        font-weight: bold;
-        font-size: 14px;
-        border-right: solid 1px #b7d5df;
-        .title{
-          cursor: pointer;
-          span{
-            float: left;
-            height: 25px;
-            margin: 10px 8px 0 12px;
-            img{
-              vertical-align: top;
+
+
+.box {
+  width: 100%;
+  overflow: hidden;
+      .leftlist {
+        width: 186px;
+        float: left;
+        background: #f0f9fd url(../img/leftline.gif) repeat-y right;
+        .leftlistli{
+          display: block;
+          background: url(../img/leftmenubg.gif) repeat-x;
+          line-height: 35px;
+          font-weight: bold;
+          font-size: 14px;
+          border-right: solid 1px #b7d5df;
+          .title {
+            cursor: pointer;
+            span {
+              float: left;
+              height: 25px;
+              margin: 10px 8px 0 12px;
+              img {
+                vertical-align: top;
+              }
+            }
+          }
+          ul li {
+            cursor: pointer;
+            cite {
+              display: block;
+              float: left;
+              margin-left: 32px;
+              background: url(../img/list.gif) no-repeat;
+              width: 16px;
+              height: 16px;
+              margin-top: 7px;
+            }
+            a {
+              color: #000;
+              font-size: 12px;
+              font-weight: 100;
+            }
+
+
+          }
+          .active {
+            position: relative;
+            background: url(../img/libg.png) repeat-x;
+            line-height: 30px;
+            color: #fff;
+            cite {
+              background: url(../img/list1.gif) no-repeat;
+            }
+            i {
+              display: block;
+              background: url(../img/sj.png) no-repeat;
+              width: 6px;
+              height: 11px;
+              position: absolute;
+              right: 0;
+              z-index: 10000;
+              top: 9px;
+              right: -1px;
+            }
+            a {
+              color: #fff;
             }
           }
         }
-        ul li{
-          cursor: pointer;
-          cite{
-            display: block;
-            float: left;
-            margin-left: 32px;
-            background: url(../img/list.gif) no-repeat;
-            width: 16px;
-            height: 16px;
-            margin-top: 7px;
-          }
-          a{
-            color: #000;
-            font-size: 12px;
-            font-weight: 100;
-          }
-          .active{
-              position:relative;
-              background:url(../images/libg.png) repeat-x;
-              line-height:30px;
-              color:#fff;
-              cite{
-                background:url(../images/list1.gif) no-repeat;
-              }
-              i{
-                display:block;
-                background:url(../images/sj.png) no-repeat;
-                width:6px;
-                height:11px;
-                position:absolute;
-                right:0;z-index:10000;
-                top:9px; right:-1px;
-              }
-              a{
-                color:#fff;
-              }
-          }
-
+      }
+      .right_box {
+        overflow: hidden;
+        .show {
+          display: none;
         }
       }
 }
+
+
 @media screen and (max-width:640px){
   .leftlist{
     display: none;

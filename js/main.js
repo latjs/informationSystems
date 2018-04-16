@@ -1,9 +1,18 @@
 $(function(){
-    //导航切换
-    $(".listbox li").click(function(){
-        $(".listbox li.active").removeClass("active")
-        $(this).addClass("active");
+    // 导航切换
+    // $(".listbox li").click(function(){
+    //     // $(".listbox li .active").removeClass("active")
+    //     $(this).addClass("active");
+    // });
+
+    $('.listbox li').each(function(k,v){
+        $(this).click(function(){
+            $('iframe').css('display','none').eq(k).css("display","block");
+
+            $('.listbox li').removeClass("active").eq(k).addClass("active");
+        })
     });
+
 
     $('.listnone').click(function(){
         $('.leftlist').toggle();
